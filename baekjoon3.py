@@ -32,8 +32,19 @@
 
 # print(YN)
 
-# 25314
-N = int(input())
-longlong = N//4
-str = "long " * longlong
-print(str+"int")
+# # 25314
+# N = int(input())
+# longlong = N//4
+# str = "long " * longlong
+# print(str+"int")
+
+# # 10871
+# N, X = map(int, input().split())
+# A = list(map(int, input().split()))
+
+# result = []
+# for num in A:
+#     if num < X:
+#         result.append(num)
+
+# print(*result)

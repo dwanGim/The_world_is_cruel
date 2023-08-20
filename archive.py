@@ -222,3 +222,18 @@ import sys
 #     if i == v:
 #         cnt += 1
 # print(cnt)
+
+# 오늘 나는 생각이란 걸 해보았다.
+# 하지만 내 생각이란 게 .......
+
+
+# # 10871
+# N, X = map(int, input().split())
+# A = list(map(int, input().split()))
+
+# result = []
+# for num in A:
+#     if num < X:
+#         result.append(num)
+
+# print(*result)
