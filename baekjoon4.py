@@ -64,3 +64,28 @@ import sys
 #     if i == v:
 #         cnt += 1
 # print(cnt)
+
+
+# # 10818
+# len(배열) 메서드는 배열의 길이를 가르쳐줍니다.
+# min(배열)과 max(배열)을 통해 최솟값과 최댓값을 구할 수 있습니다.
+# N = int(input())
+# nums = list(map(int, input().split()))
+
+# if N == len(nums):
+#     print(f"{min(nums)} {max(nums)}")
+# else:
+#     print("첫번째로 주어진 N과 동일한 길이의 배열을 제공해주세요!")
+
+# # 2562
+# max(배열) 메서드는 배열의 최댓값을 찾아줍니다.
+# 배열.index(인덱스) 메서드는 배열 내부에서 인덱스의 위치를 찾아줍니다. 
+# nums = []
+# roop = 9
+# for i in range(0, roop):
+#     N = int(input())
+#     nums.append(N)
+
+# max_num = max(nums)
+# print(max_num)
+# print(nums.index(max_num)+1)
