@@ -24,8 +24,30 @@ import sys
 # a, b, c = map(int, input().split())
 # print(a+b+c)
 
-print("|\_/|")
-print("|q p|   /}")
-print('( 0 )"""\\')
-print('|"^"`    |')
-print('||_/=\\\\__|')
+# # 10172
+# print("|\_/|")
+# print("|q p|   /}")
+# print('( 0 )"""\\')
+# print('|"^"`    |')
+# print('||_/=\\\\__|')
+
+# 10813
+# N, M = map(int, input().split())
+# baskets = [0] * N
+
+# for _ in range(M):
+#     i, j, k = map(int, input().split())
+#     for idx in range(i-1, j):
+#         baskets[idx] = k
+
+# print(*baskets)
+
+# 10813
+N, M = map(int, input().split())
+balls = list(range(1, N+1))
+
+for _ in range(M):
+    i, j = map(int, input().split())
+    balls[i-1], balls[j-1] = balls[j-1], balls[i-1]
+
+print(*balls)
