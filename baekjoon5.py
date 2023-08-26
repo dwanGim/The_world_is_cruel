@@ -63,14 +63,19 @@ import sys
 # print(min(result))
 # print(max(result))
 
-# 3052
-# set은 중복되지 않은 값들의 집합을 나타내며
-# 배열의 원소들을 set으로 변환하여 중복되지 않은 값들만 남습니다.
-# 이후 set의 길이를 확인하면 서로 다른 값의 개수를 얻을 수 있습니다.
-n = []
-for _ in range(10):
-    x = int(input())
-    n.append(x%42)
+# # 3052
+# # set은 중복되지 않은 값들의 집합을 나타내며
+# # 배열의 원소들을 set으로 변환하여 중복되지 않은 값들만 남습니다.
+# # 이후 set의 길이를 확인하면 서로 다른 값의 개수를 얻을 수 있습니다.
+# n = []
+# for _ in range(10):
+#     x = int(input())
+#     n.append(x%42)
 
-cnt = len(set(n))
-print(cnt)
+# cnt = len(set(n))
+# print(cnt)
+
+# 27866
+S = input()
+i = int(input())
+print(S[i-1])
