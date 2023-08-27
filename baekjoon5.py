@@ -75,7 +75,11 @@ import sys
 # cnt = len(set(n))
 # print(cnt)
 
-# 27866
-S = input()
-i = int(input())
-print(S[i-1])
+# # 27866
+# S = input()
+# i = int(input())
+# print(S[i-1])
+
+# # 2743
+# word = input()
+# print(len(word))
