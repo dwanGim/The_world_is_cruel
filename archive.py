@@ -314,3 +314,18 @@ import sys
 
 # cnt = len(set(n))
 # print(cnt)
+
+# # 27866
+# S = input()
+# i = int(input())
+# print(S[i-1])
+
+# # 2743
+# word = input()
+# print(len(word))
+
+# # 9086
+# T = int(input())
+# for _ in range(T) :
+#     word = input()
+#     print(word[0]+word[len(word)-1])
