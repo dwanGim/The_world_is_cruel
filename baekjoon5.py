@@ -89,3 +89,16 @@ import sys
 # for _ in range(T) :
 #     word = input()
 #     print(word[0]+word[len(word)-1])
+
+# # 11654
+# # 파이썬 라이브러리의 ord를 사용해 아스키코드 출력
+# str = input()
+# ascii = ord(str)
+# print(ascii)
+
+# # 11720
+# N = int(input())
+
+# numbers = input()
+# total = sum(int(digit) for digit in numbers)
+# print(total)
