@@ -102,3 +102,29 @@ import sys
 # numbers = input()
 # total = sum(int(digit) for digit in numbers)
 # print(total)
+
+# # 10809
+# # 알파벳 소문자 개수만큼 -1로 초기화된 리스트를 생성합니다.
+# result = [-1] * 26
+# # 입력 문자열을 받습니다.
+# word = input()
+# # 입력 문자열을 순회하면서 각 알파벳의 위치를 업데이트합니다.
+# for i in range(len(word)):
+#     # 알파벳의 아스키 코드 값을 이용해서 해당 알파벳이 처음 등장하는 위치를 저장합니다.
+#     index = ord(word[i]) - ord('a')
+#     if result[index] == -1:
+#         result[index] = i
+
+# # 결과 리스트를 공백으로 구분하여 출력합니다.
+# print(" ".join(map(str, result)))
+
+# 2908
+# 두 개의 수를 입력받습니다.
+A, B = map(int, input().split())
+
+# 두 수를 거꾸로 읽은 값을 구합니다.
+A = int(str(A)[::-1])
+B = int(str(B)[::-1])
+
+# 더 큰 값을 출력합니다.
+print(max(A, B))
