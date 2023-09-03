@@ -118,13 +118,28 @@ import sys
 # # 결과 리스트를 공백으로 구분하여 출력합니다.
 # print(" ".join(map(str, result)))
 
-# 2908
-# 두 개의 수를 입력받습니다.
-A, B = map(int, input().split())
+# # 2908
+# # 두 개의 수를 입력받습니다.
+# A, B = map(int, input().split())
 
-# 두 수를 거꾸로 읽은 값을 구합니다.
-A = int(str(A)[::-1])
-B = int(str(B)[::-1])
+# # 두 수를 거꾸로 읽은 값을 구합니다.
+# A = int(str(A)[::-1])
+# B = int(str(B)[::-1])
 
-# 더 큰 값을 출력합니다.
-print(max(A, B))
+# # 더 큰 값을 출력합니다.
+# print(max(A, B))
+
+# # 2675
+# # 테스트 케이스의 개수 T 입력
+# T = int(input())
+
+# # 각 테스트 케이스에 대해 반복
+# for _ in range(T):
+#     # 반복 횟수 R과 문자열 S 입력
+#     R, S = input().split()
+    
+#     # 문자열 S의 각 문자를 R번 반복하여 P를 만듦
+#     P = ''.join([char * int(R) for char in S])
+    
+#     # 결과 출력
+#     print(P)
