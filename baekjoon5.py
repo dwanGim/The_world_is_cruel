@@ -144,17 +144,73 @@ import sys
 #     # 결과 출력
 #     print(P)
 
-# 2444 별찍기
-N = int(input())
+# # 2444 별찍기
+# N = int(input())
 
-# 위쪽 삼각형 출력
-for i in range(1, N + 1):
-    spaces = " " * (N - i)
-    stars = "*" * (2 * i - 1)
-    print(spaces + stars)
+# # 위쪽 삼각형 출력
+# for i in range(1, N + 1):
+#     spaces = " " * (N - i)
+#     stars = "*" * (2 * i - 1)
+#     print(spaces + stars)
 
-# 아래쪽 삼각형 출력
-for i in range(N - 1, 0, -1):
-    spaces = " " * (N - i)
-    stars = "*" * (2 * i - 1)
-    print(spaces + stars)
+# # 아래쪽 삼각형 출력
+# for i in range(N - 1, 0, -1):
+#     spaces = " " * (N - i)
+#     stars = "*" * (2 * i - 1)
+#     print(spaces + stars)
+
+# # 10988
+# n = input()
+
+# # 문자열을 뒤집은 것과 원래 문자열이 같으면 팰린드롬
+# if n == n[::-1] : print(1) 
+# else : print(0)
+
+
+
+# # 2720
+# T = int(input())
+# for _ in range(T):
+#     C = int(input()) / 100
+
+#     quarters = int(C / 0.25)
+#     C %= 0.25
+    
+#     dimes = int(C / 0.10)
+#     C %= 0.10
+    
+#     nickels = int(C / 0.05)
+#     C %= 0.05
+    
+#     pennies = int(C / 0.01)
+
+#     print(quarters, dimes, nickels, pennies)
+
+
+# # 1152
+# s = input()
+# strip_s = s.strip()
+# # print(strip_s)
+# result = len(strip_s.split())
+# print(result)
+
+# # 5622
+
+# dial = {
+#     'A': 3, 'B': 3, 'C': 3,
+#     'D': 4, 'E': 4, 'F': 4,
+#     'G': 5, 'H': 5, 'I': 5,
+#     'J': 6, 'K': 6, 'L': 6,
+#     'M': 7, 'N': 7, 'O': 7,
+#     'P': 8, 'Q': 8, 'R': 8, 'S': 8,
+#     'T': 9, 'U': 9, 'V': 9,
+#     'W': 10, 'X': 10, 'Y': 10, 'Z': 10
+# }
+
+# s = (input()).upper()
+# time = 0
+
+# for i in s:
+#     time += dial[i]
+
+# print(time)
