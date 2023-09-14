@@ -194,7 +194,7 @@ import sys
 # result = len(strip_s.split())
 # print(result)
 
-# # 5622
+# # # 5622
 
 # dial = {
 #     'A': 3, 'B': 3, 'C': 3,
@@ -214,3 +214,37 @@ import sys
 #     time += dial[i]
 
 # print(time)
+
+# # 2941
+
+# data = {
+#     'c=': 'č',
+#     'c-':'ć',
+#     'dz=':'dž',
+#     'd-':'đ',
+#     'lj':'lj',
+#     'nj': 'nj',
+#     's=': 'š',
+#     'z=': 'ž'
+# }
+# print(data)
+# croatians = list(data.keys())
+
+# s = input()
+# result = []
+# i = 0
+
+# while i < len(s):
+#     found = False
+#     for croatian in croatians:
+#         if s[i:].startswith(croatian):
+#             result.append(croatian)
+#             i += len(croatian)
+#             found = True
+#             break
+#     if not found:
+#         result.append(s[i])
+#         i += 1
+
+# print(len(result))
+
