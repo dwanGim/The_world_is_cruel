@@ -248,3 +248,26 @@ import sys
 
 # print(len(result))
 
+# # 1546
+# N = int(input())
+# scores = list(map(int, input().split()))
+
+# max_score = max(scores)
+
+# new_scores = [score / max_score * 100 for score in scores]
+
+# avr = sum(new_scores) / N
+
+# print(avr)
+
+# 10811
+N, M = map(int, input().split())
+
+baskets = list(range(1, N + 1))
+
+for _ in range(M):
+    i, j = map(int, input().split())
+    baskets[i - 1:j] = reversed(baskets[i - 1:j])
+
+
+print(' '.join(map(str, baskets)))
