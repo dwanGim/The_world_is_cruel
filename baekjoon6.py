@@ -179,26 +179,64 @@
 # else:
 #     print(max_char[0])
 
-# # 25206
-# 너의 평점은...
-# 인하대학교 컴퓨터공학과를 졸업하기 위해서는, 전공평점이 3.3 이상이거나 졸업고사를 통과해야 한다. 그런데 아뿔싸, 치훈이는 깜빡하고 졸업고사를 응시하지 않았다는 사실을 깨달았다!
+# # # 25206
+# # 너의 평점은...
+# # 인하대학교 컴퓨터공학과를 졸업하기 위해서는, 전공평점이 3.3 이상이거나 졸업고사를 통과해야 한다. 그런데 아뿔싸, 치훈이는 깜빡하고 졸업고사를 응시하지 않았다는 사실을 깨달았다!
 
-# 치훈이의 전공평점을 계산해주는 프로그램을 작성해보자.
+# # 치훈이의 전공평점을 계산해주는 프로그램을 작성해보자.
 
-# 전공평점은 전공과목별 (학점 × 과목평점)의 합을 학점의 총합으로 나눈 값이다.
+# # 전공평점은 전공과목별 (학점 × 과목평점)의 합을 학점의 총합으로 나눈 값이다.
 
-data = {
-    'A+' : 4.5,
-    'A0' : 4.0,
-    'B+' : 3.5,
-    'B0' : 3.0,
-    "C+" : 2.5,
-    "C0" : 2.0,
-    "D+" : 1.5,
-    "D0" : 1.0,
-    "F" : 0.0,
-    "P" : 0.0
-}
+# data = {
+#     'A+' : 4.5,
+#     'A0' : 4.0,
+#     'B+' : 3.5,
+#     'B0' : 3.0,
+#     "C+" : 2.5,
+#     "C0" : 2.0,
+#     "D+" : 1.5,
+#     "D0" : 1.0,
+#     "F" : 0.0
+# }
 
-name, score, char = map(str, input().split(' '))
-# N, M = map(int, input().split())
+
+# def 너의평점은():
+#     total_point = 0.0
+#     total_score = 0.0
+
+#     for _ in range(20):
+#         name, score, grade = map(str, input().split(' '))
+#         score = float(score)
+#         grade = grade.upper()
+
+#         if grade != 'P':
+#             total_point += score * data[grade]
+#             total_score += score
+
+#     if total_point == 0:
+#         return 0.0
+
+#     else :
+#         your_score = total_score / total_point
+#         return f'{your_score:.6f}'
+
+# 너의평점은()
+
+
+# 2783
+N, M = map(int, input().split())
+
+matrix_A = [list(map(int, input().split())) for _ in range(N)]
+
+matrix_B = [list(map(int, input().split())) for _ in range(N)]
+
+result_matrix = []
+
+for i in range(N):
+    row = []
+    for j in range(M):
+        row.append(matrix_A[i][j] + matrix_B[i][j])
+    result_matrix.append(row)
+
+for row in result_matrix:
+    print(*row)
