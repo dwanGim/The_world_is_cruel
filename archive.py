@@ -487,3 +487,24 @@ import sys
 #         i += 1
 
 # print(len(result))
+
+# # 1269
+# N, M = map(int, input().split())
+# A = set(map(int, input().split()))
+# B = set(map(int, input().split()))
+
+# result = (A-B) | (B-A)
+# print(len(result))
+
+# # 11478
+# S = input().lower()
+
+# chars = []
+
+# for i in range(len(S)):
+#     for j in range(i, len(S)):
+#         substring = S[i:j+1]
+#         chars.append(substring)
+
+# chars = set(chars)
+# print(len(chars))

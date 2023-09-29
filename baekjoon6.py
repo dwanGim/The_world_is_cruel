@@ -223,20 +223,41 @@
 # 너의평점은()
 
 
-# 2783
-N, M = map(int, input().split())
+# # 2783
+# N, M = map(int, input().split())
 
-matrix_A = [list(map(int, input().split())) for _ in range(N)]
+# matrix_A = [list(map(int, input().split())) for _ in range(N)]
 
-matrix_B = [list(map(int, input().split())) for _ in range(N)]
+# matrix_B = [list(map(int, input().split())) for _ in range(N)]
 
-result_matrix = []
+# result_matrix = []
 
-for i in range(N):
-    row = []
-    for j in range(M):
-        row.append(matrix_A[i][j] + matrix_B[i][j])
-    result_matrix.append(row)
+# for i in range(N):
+#     row = []
+#     for j in range(M):
+#         row.append(matrix_A[i][j] + matrix_B[i][j])
+#     result_matrix.append(row)
 
-for row in result_matrix:
-    print(*row)
+# for row in result_matrix:
+#     print(*row)
+
+# # 1269
+# N, M = map(int, input().split())
+# A = set(map(int, input().split()))
+# B = set(map(int, input().split()))
+
+# result = (A-B) | (B-A)
+# print(len(result))
+
+# # 11478
+# S = input().lower()
+
+# chars = []
+
+# for i in range(len(S)):
+#     for j in range(i, len(S)):
+#         substring = S[i:j+1]
+#         chars.append(substring)
+
+# chars = set(chars)
+# print(len(chars))
