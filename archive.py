@@ -508,3 +508,37 @@ import sys
 
 # chars = set(chars)
 # print(len(chars))
+
+
+# # 1764
+# # N, M = map(int, input().split())
+# # unHeard = []
+# # unEyesd = []
+# # for _ in range(N):
+# #     unHeard.append(input())
+
+# # for _ in range(M):
+# #     unEyesd.append(input())
+
+# # unHeard_unEyesd = []
+
+# # for i in unHeard:
+# #     if unEyesd.count(i) != 0:
+# #         unHeard_unEyesd.append(i)
+
+# # sorted(unHeard_unEyesd)
+# # print(len(unHeard_unEyesd))
+
+# # for i in unHeard_unEyesd:
+# #     print(i)
+
+# N, M = map(int, input().split())
+
+# unheard = set(input() for _ in range(N))
+# unseen = set(input() for _ in range(M))
+
+# common_people = sorted(unheard.intersection(unseen))
+
+# print(len(common_people))
+# for person in common_people:
+#     print(person)
