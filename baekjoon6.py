@@ -261,3 +261,28 @@
 
 # chars = set(chars)
 # print(len(chars))
+
+# # 25305
+# N, K = map(int, input().split())
+# scores = list(map(int, input().split()))
+# scores = reversed(sorted(scores))
+
+# print(list(scores)[K-1])
+
+# # 2587
+# scores =  list(int(input()) for _ in range(5))
+
+# scores = sorted(scores)
+# length = len(scores)
+# mid = scores[length//2]
+# avr = sum(scores) / length
+
+# print(int(avr))
+# print(mid)
+
+# 2750
+N = int(input())
+L = [int(input()) for _ in range(N)]
+
+for i in sorted(L):
+    print(i)
