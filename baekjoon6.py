@@ -280,9 +280,53 @@
 # print(int(avr))
 # print(mid)
 
-# 2750
-N = int(input())
-L = [int(input()) for _ in range(N)]
+# # 2750
+# N = int(input())
+# L = [int(input()) for _ in range(N)]
 
-for i in sorted(L):
-    print(i)
+# for i in sorted(L):
+#     print(i)
+
+# # 1427
+# N = input()
+# L = []
+
+# for char in N:
+#     L.append(int(char))
+# L = sorted(L, reverse=True)
+# print(''.join(map(str, L)))
+
+# # 2738
+# N,M = map(int, input().split())
+
+# A = []
+# B = []
+
+# for _ in range(N):
+#     L = list(map(int, input().split()))
+#     A.append(L)
+
+# for _ in range(N):
+#     L = list(map(int, input().split()))
+#     B.append(L)
+
+# result = []
+
+# for i in range(N):
+#     L = []
+#     for j in range(M):
+#         L.append(A[i][j]+B[i][j])
+#     result.append(L)
+
+# for i in result:
+#     print(*i)
+
+# 2566
+
+matrix = []
+for i in range(9):
+    row = list(map(int, input()))
+    matrix.append(row)
+
+for row in matrix:
+    print(row)
