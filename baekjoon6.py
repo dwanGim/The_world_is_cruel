@@ -321,12 +321,35 @@
 # for i in result:
 #     print(*i)
 
-# 2566
+# # 2566
+# matrix = []
+# for i in range(9):
+#     row = list(map(int, input()))
+#     matrix.append(row)
 
-matrix = []
-for i in range(9):
-    row = list(map(int, input()))
-    matrix.append(row)
+# for row in matrix:
+#     print(row)
 
-for row in matrix:
-    print(row)
+# 2720
+T = int(input())
+
+for _ in range(T):
+    C = int(input())
+    
+    quarters = 0
+    dimes = 0
+    nickels = 0
+    pennies = 0
+    
+    quarters = C // 25
+    C %= 25
+
+    dimes = C // 10
+    C %= 10
+    
+    nickels = C // 5
+    C %= 5
+    
+    pennies = C
+
+    print(quarters, dimes, nickels, pennies)
