@@ -330,26 +330,26 @@
 # for row in matrix:
 #     print(row)
 
-# 2720
-T = int(input())
+# # 2720
+# T = int(input())
 
-for _ in range(T):
-    C = int(input())
+# for _ in range(T):
+#     C = int(input())
     
-    quarters = 0
-    dimes = 0
-    nickels = 0
-    pennies = 0
+#     quarters = 0
+#     dimes = 0
+#     nickels = 0
+#     pennies = 0
     
-    quarters = C // 25
-    C %= 25
+#     quarters = C // 25
+#     C %= 25
 
-    dimes = C // 10
-    C %= 10
+#     dimes = C // 10
+#     C %= 10
     
-    nickels = C // 5
-    C %= 5
+#     nickels = C // 5
+#     C %= 5
     
-    pennies = C
+#     pennies = C
 
-    print(quarters, dimes, nickels, pennies)
+#     print(quarters, dimes, nickels, pennies)
