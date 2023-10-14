@@ -326,7 +326,7 @@
 # for i in range(9):
 #     row = list(map(int, input()))
 #     matrix.append(row)
-
+ 
 # for row in matrix:
 #     print(row)
 
@@ -353,3 +353,24 @@
 #     pennies = C
 
 #     print(quarters, dimes, nickels, pennies)
+
+# 2745
+def convert_to_decimal(N, B):
+    char_to_num = {chr(i): i - 55 for i in range(65, 91)}
+    
+    decimal_value = 0
+    N = N[::-1] 
+    base = 1  
+    for digit in N:
+        if digit.isalpha():
+            decimal_value += char_to_num[digit] * base
+        else:
+            decimal_value += int(digit) * base
+        base *= B
+    return decimal_value
+
+N, B = input().split()
+B = int(B)
+
+result = convert_to_decimal(N, B)
+print(result)
