@@ -48,3 +48,12 @@
 #         result.append(num)
 
 # print(*result)
+
+# # 27323
+
+# A = int(input())
+# B = int(input())
+
+# area = A * B
+
+# print(area)
